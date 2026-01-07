@@ -1,0 +1,22 @@
+
+func split_whitespace(s):
+    palabras = []
+    buffer = ""
+    en_palabra = False
+
+    for ch in s:
+        if es_espacio(ch):              # ch.isspace()
+            if en_palabra:
+                palabras.append(buffer)
+                buffer = ""
+                en_palabra = False
+        else:
+            if not en_palabra:
+                en_palabra = True
+            buffer += ch
+
+    if en_palabra:
+        palabras.append(buffer)
+
+    return palabras
+``
