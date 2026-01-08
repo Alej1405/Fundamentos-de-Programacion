@@ -22,5 +22,36 @@ if longitud % 2 == 0 :
     mediana = (med_1+med_2)/2
     print("mediana", mediana)
 else:
-    print("La mediana: ",numeros[posicion])
     #inpar
+    print("La mediana: ",numeros[posicion])
+
+#calculo de la moda
+moda = max(numeros, key=numeros.count)
+frecuencia = numeros.count(moda)
+
+if moda > 1 :
+    print("la moda es: ", moda)
+    print("la frecuencia es: ", frecuencia)
+else:
+    print("no hay moda")
+
+modas = [x for x in set(numeros) if numeros.count(x)==frecuencia ]
+
+print("moda: ", modas)
+
+maximo = 1 
+moda = []
+for num in numeros:
+    conteo = numeros.count(num)
+    if conteo >= maximo:
+        if num in moda:
+            pass
+        else:
+            moda.append(num)
+        maximo = conteo
+moda.reverse()
+moda.pop()
+if maximo > 1: 
+    print("Moda: ",moda)
+else:
+    print("no hay moda")
