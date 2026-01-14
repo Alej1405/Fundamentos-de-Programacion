@@ -13,24 +13,29 @@ print("Remove: ", conjunto)
 conjunto.discard(10)
 print("Discard(inexistente): ", conjunto)
 
+# pop elmina el ultimo elemto del conjunto
 elemento = conjunto.pop()
 print("Conjunto Pop: ", conjunto)
 print("Pop: ", elemento)
 
+#combina los elementos de los conjuntos sin duplicados
+#conjunto = {12,12,2,3,4}
 conjunto1 = {5,3,4,3,231,23,123}
 print("conjunto: ", conjunto1)
 union_conjuntos = conjunto.union(conjunto1)
 print("Union: ", union_conjuntos)
 
+#interseccion, muestra solamente los caracteres en comun de los conjuntos
+conjunto = {12,12,2,3,4}
 print("conjunto1: ", conjunto1)
 interseccion = conjunto.intersection(conjunto1)
 print("Interseccion: ", interseccion)
 
-# elimina todos los elementos del conjunto 1 incluyendo la interseccion
+# elimina todos los elementos del conjunto 1 incluyendo la interseccion. Si en la sintax el conjunto primario es el que se modifica.
 diferencia = conjunto.difference(conjunto1)
 print("Difference: ", diferencia)
 
-# elimina solo la interseccion
+# elimina solo la interseccion diferencia simetrica
 diferencia_simereica = conjunto.symmetric_difference(conjunto1)
 print("Symmetric.difference: ", diferencia_simereica)
 

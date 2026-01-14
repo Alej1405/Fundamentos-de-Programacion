@@ -1,12 +1,8 @@
-
 # Ingresar la frase encriptada por teclado
 encriptada = input("Ingresa la frase encriptada: ")
 
-# Clave usada para cifrar (debe ser la misma)
+# Clave usada para cifrar 
 clave = 5
-# Si prefieres ingresar la clave por teclado, descomenta la siguiente línea:
-# clave = int(input("Ingresa la clave (entero): "))
-
 descifrada = ""
 
 for caracter in encriptada:
@@ -15,5 +11,6 @@ for caracter in encriptada:
     nuevo_caracter = chr(original)         # convertimos nuevamente a carácter
     descifrada += nuevo_caracter
 
+print("---SISTEMA DE DESENCRIPTACION DE CLAVES---")
 print("Frase descifrada:")
 print(descifrada)
