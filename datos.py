@@ -34,6 +34,7 @@ print("SortV: ", lista)
 lista.reverse()
 print("Reverse: ", lista)
 
+#ordena sin crear una nueva lista.
 lista.sort(reverse=False)
 print("SortF: ", lista)
 
@@ -41,15 +42,17 @@ print("SortF: ", lista)
 lista.reverse()
 print("Reverse: ", lista)
 
-# limpia la lista
+# limpia la lista es decir borra el contenido
 lista.clear()
 print("Clear: ", lista)
 
 lista = [1,2,3,4,5,6,7,8,9,0]
 
+# inserta un elemento por el orden de lista.
 lista[5] = 78
 print("Insertar por posicion", lista)
 
+#bucle for 
 print("Lista: ")
 for i in lista:
     print(i)
