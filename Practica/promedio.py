@@ -15,3 +15,15 @@ for i in range(division):
 
 promedio = suma / division
 print("el promero es:",promedio)
+
+#calculo de la mediana
+numeros.reverse()
+mediana = 3
+numeros_m = []
+
+for i in range(division):
+    numeros_m.append(float(numeros[i]))
+
+numeros_m.sort()
+print(numeros_m)
+print("La mediana: ",numeros[mediana])
