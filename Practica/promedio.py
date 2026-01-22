@@ -12,6 +12,7 @@ suma = 0
 for i in range(division):
     numeros[i] = float(numeros[i])
     suma = suma + numeros[i]
+    print(f"Indice {i}: valor = {numeros[1]}")
 
 promedio = suma / division
 print("el promero es:",promedio)
@@ -27,3 +28,6 @@ for i in range(division):
 numeros_m.sort()
 print(numeros_m)
 print("La mediana: ",numeros[mediana])
+
+#slicing recibe dos parametros : inicio en cero 5 nuermo hasta el numero de indice.
+
