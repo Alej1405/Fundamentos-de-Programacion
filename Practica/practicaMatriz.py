@@ -1,4 +1,0 @@
-matriz = [['a','b','c','d'],['1','2','3','4'],['f','g','h','i'],['5','6','7','8']]
-
-for fila in matriz:
-    print(fila)
